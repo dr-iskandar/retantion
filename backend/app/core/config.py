@@ -43,6 +43,10 @@ class Settings(BaseSettings):
     MINIO_ACCESS_KEY: str = "minioadmin"
     MINIO_SECRET_KEY: str = "minioadmin"
     MINIO_USE_SSL: bool = False
+
+    # WhatsApp
+    WHATSAPP_VERIFY_TOKEN: str = "RETANTION_VERIFY_TOKEN"
+    WHATSAPP_ACCESS_TOKEN: str | None = None
     MINIO_BUCKET_NAME: str = "retantion-media"
 
     model_config = SettingsConfigDict(case_sensitive=True, env_file=".env")

@@ -4,11 +4,12 @@ import "./globals.css";
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{locale: string}>;
 }) {
+  const { locale } = await params;
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
