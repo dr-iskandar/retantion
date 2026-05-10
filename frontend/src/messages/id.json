@@ -1,0 +1,15 @@
+{
+  "Index": {
+    "title": "Selamat Datang di Retantion",
+    "description": "CRM Properti Modern untuk Agency Anda.",
+    "getStarted": "Mulai Sekarang",
+    "login": "Masuk"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "leads": "Lead",
+    "properties": "Properti",
+    "pipeline": "Pipeline",
+    "tasks": "Tugas"
+  }
+}

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary: #9333ea;
+  --accent: #f472b6;
+  --surface: #f8fafc;
+  --border: #e2e8f0;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+}
+
+@layer components {
+  .btn-premium {
+    @apply px-6 py-3 rounded-2xl font-bold transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 shadow-lg hover:shadow-xl;
+  }
+  
+  .card-premium {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-2xl rounded-3xl p-8;
+  }
+
+  .glass-nav {
+    @apply bg-white/60 backdrop-blur-xl border-b border-gray-100/50 sticky top-0 z-50;
+  }
+}
+
+/* Custom animations for Canva-like feel */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600;
+}

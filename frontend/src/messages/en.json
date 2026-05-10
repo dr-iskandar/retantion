@@ -1,0 +1,15 @@
+{
+  "Index": {
+    "title": "Welcome to Retantion",
+    "description": "Modern Property CRM for your Agency.",
+    "getStarted": "Get Started",
+    "login": "Login"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "leads": "Leads",
+    "properties": "Properties",
+    "pipeline": "Pipeline",
+    "tasks": "Tasks"
+  }
+}
